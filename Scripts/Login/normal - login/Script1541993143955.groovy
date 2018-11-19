@@ -30,15 +30,16 @@ password=WebUI.getAttribute(findTestObject('LoginPage/input_Password_password'),
 
 if(username != null && password != null){
 	if(username.equals(GlobalVariable.username) && password.equals(GlobalVariable.password)) {
-		println("username: " + username)
-		println("password: " + password)
+		println("username: " + username + " | password: " + password)
+		WebUI.click(findTestObject('LoginPage/i_Password_fa-eye'))
+		WebUI.click(findTestObject('LoginPage/button_MASUK'))
+		
 	} else {
-		println("username tidak sesuai (" + username + ")")
-		println("password tidak sesuai (" + password + ")")
+		if (username.equals(GlobalVariable.username)) {
+			println("username tidak sesuai (" + username + ")")
+		} else {
+			println("password tidak sesuai (" + password + ")")
+		}
 	}
 }
-
-WebUI.click(findTestObject('LoginPage/i_Password_fa-eye'))
-
-WebUI.click(findTestObject('LoginPage/button_MASUK'))
 
