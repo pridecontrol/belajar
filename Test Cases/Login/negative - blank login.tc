@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>negative - blank login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>49be4d1f-f50d-432d-97d3-e5c08a858783</testCaseGuid>
+</TestCaseEntity>

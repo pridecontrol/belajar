@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>normal - BC-SMS - with excel</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e662de34-4305-4321-a9c4-d877773a3a2f</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('excel-campaign')</defaultValue>
+      <description></description>
+      <id>3c8f898c-9c11-488e-9d23-c5b082de36d9</id>
+      <masked>false</masked>
+      <name>data</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>normal - BC-SMS</name>
+   <tag></tag>
+   <comment>Step 1
+Step 2
+Step 3
+record value button &quot;Saya sudah yakin&quot;</comment>
+   <testCaseGuid>9ff51a96-9a79-4d72-9299-406dd645a126</testCaseGuid>
+</TestCaseEntity>
