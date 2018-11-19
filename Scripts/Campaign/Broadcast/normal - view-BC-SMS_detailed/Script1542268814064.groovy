@@ -15,8 +15,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.apache.commons.lang3.StringUtils as StringUtils
 import org.openqa.selenium.Keys as Keys
-import java.io.BufferedWriter;
-import java.io.FileWriter;
+import java.io.BufferedWriter
+import java.io.FileWriter
 
 
 FileWriter fileOutput = new FileWriter("D:\\output.txt")
