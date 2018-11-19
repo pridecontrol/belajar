@@ -24,21 +24,24 @@ WebUI.setText(findTestObject('LoginPage/input_Alamat E-mail Anda_email'), Global
 WebUI.setText(findTestObject('LoginPage/input_Password_password'), GlobalVariable.password)
 
 //Verifying value not null and correctly
+username = WebUI.getAttribute(findTestObject('LoginPage/input_Alamat E-mail Anda_email'), 'value')
 
-username=WebUI.getAttribute(findTestObject('LoginPage/input_Alamat E-mail Anda_email'), "value")
-password=WebUI.getAttribute(findTestObject('LoginPage/input_Password_password'), "value")
+password = WebUI.getAttribute(findTestObject('LoginPage/input_Password_password'), 'value')
 
-if(username != null && password != null){
-	if(username.equals(GlobalVariable.username) && password.equals(GlobalVariable.password)) {
-		println("username: " + username)
-		println("password: " + password)
-	} else {
-		println("username tidak sesuai (" + username + ")")
-		println("password tidak sesuai (" + password + ")")
-	}
+if ((username != null) && (password != null)) {
+    if (username.equals(GlobalVariable.username) && password.equals(GlobalVariable.password)) {
+        println('username: ' + username + ' | password: ' + password)
+
+        WebUI.click(findTestObject('LoginPage/i_Password_fa-eye'))
+
+        WebUI.click(findTestObject('LoginPage/button_MASUK'))
+    } else {
+        println(('username tidak sesuai (' + username) + ')')
+
+        println(('password tidak sesuai (' + password) + ')')
+    }
+} else {
+	println('Terjadi kesalahan! Terdapat value null pada username/password ')
+	println ('username: ' + username + ' | password: ' + password )
 }
-
-WebUI.click(findTestObject('LoginPage/i_Password_fa-eye'))
-
-WebUI.click(findTestObject('LoginPage/button_MASUK'))
 

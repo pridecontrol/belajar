@@ -47,7 +47,7 @@ bufferwr.newLine()
 
 judul = WebUI.getText(findTestObject('Object Repository/Campaign/strong_TESTING2'))
 
-if (judul.equals('TESTING')) {
+if (judul.equals('TESTING2')) {
 	println('judul iklan sudah benar')
     bufferwr.write('judul iklan sudah benar')
 	bufferwr.newLine()
