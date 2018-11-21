@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[@class = 'badge badge-info']</value>
+         <value>//span[contains(@class, 'badge badge-info')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -32,9 +32,9 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>badge badge-info</value>
+      <value>badge</value>
    </webElementProperties>
 </WebElementEntity>

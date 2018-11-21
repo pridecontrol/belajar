@@ -27,19 +27,36 @@ for (def index2 : (0..data.getRowNumbers() - 1)) {
 	
 	WebUI.click(findTestObject('Campaign/a_Daftar Iklan'))
 	
-	WebUI.setText(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), data.internallyGetValue('namaiklan', index2))
+	status = ''
 	
-	WebUI.sendKeys(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), Keys.chord(Keys.ENTER))
+	//check if the status is already STOP or REJECT or FINISH
+	while (((status != 'STOP') || (status != 'REJECT')) || (status != 'FINISH')) {
+		WebUI.setText(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), data.internallyGetValue('namaiklan', index2))
+		WebUI.sendKeys(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), Keys.chord(Keys.ENTER))
+		WebUI.click(findTestObject('Campaign/i_WAITING_fas fa-eye'))
 	
-	WebUI.click(findTestObject('Campaign/i_WAITING_fas fa-eye'))
+		status = WebUI.getText(findTestObject('Campaign/Status'))
+		
+		if (status.equals('')) {
+			println('Getting campaign status')
 	
-	String dynamicId3 = "submit"
-	String xpath = ("//button[@type='" + dynamicId3 + "']")
-	TestObject testobject = new TestObject()
-	testobject.addProperty('xpath', ConditionType.EQUALS, xpath)
-	WebUI.click(testobject)
-	WebUI.removeObjectProperty(testobject, dynamicId3)
+			WebUI.mouseOver(findTestObject('Campaign/a_Iklan'))
+			WebUI.click(findTestObject('Campaign/a_Daftar Iklan'))
+		} else if ((status.equals('STOP') || status.equals('REJECT')) || status.equals('FINISH')) {
+			println('Status campaign sudah dihentikan')
 	
+			break
+		} else {
+			println('Status campaign belum STOP/REJECT/FINISH')
+			
+			String dynamicId3 = "submit"
+			String xpath = ("//button[@type='" + dynamicId3 + "']")
+			TestObject testobject = new TestObject()
+			testobject.addProperty('xpath', ConditionType.EQUALS, xpath)
+			WebUI.click(testobject)
+			WebUI.removeObjectProperty(testobject, dynamicId3)
+		}
+	}
 	WebUI.navigateToUrl(GlobalVariable.url)
 }
 

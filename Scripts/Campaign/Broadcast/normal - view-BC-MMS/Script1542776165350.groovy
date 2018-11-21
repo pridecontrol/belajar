@@ -18,48 +18,50 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/normal - login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
-
-//TestData data = findTestData('excel-campaign')
-//for (def index2 : (0..data.getRowNumbers() - 1)) {
 WebUI.mouseOver(findTestObject('Campaign/a_Iklan'))
 
 WebUI.click(findTestObject('Campaign/a_Daftar Iklan'))
 
-WebUI.setText(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), 'NeuraltTesting_20181121_MMS')
+status = ''
 
-WebUI.sendKeys(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), Keys.chord(Keys.ENTER))
+//check if the status is already STOP or REJECT or FINISH
+while (((status != 'STOP') || (status != 'REJECT')) || (status != 'FINISH')) {
+    WebUI.setText(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), 'Neural_Test_20181115_03')
 
-WebUI.click(findTestObject('Campaign/i_WAITING_fas fa-eye'))
+    WebUI.sendKeys(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), Keys.chord(Keys.ENTER))
 
-String dynamicId3 = 'submit'
+    WebUI.click(findTestObject('Campaign/i_WAITING_fas fa-eye'))
 
-String xpath = ('//button[@type=\'' + dynamicId3) + '\']'
+    status = WebUI.getText(findTestObject('Campaign/Status'))
 
-TestObject testobject = new TestObject()
+    if (status.equals('')) {
+        println('Getting campaign status')
 
-testobject.addProperty('xpath', ConditionType.EQUALS, xpath)
+        WebUI.mouseOver(findTestObject('Campaign/a_Iklan'))
 
-WebUI.click(testobject)
+        WebUI.click(findTestObject('Campaign/a_Daftar Iklan'))
+    } else if ((status.equals('STOP') || status.equals('REJECT')) || status.equals('FINISH')) {
+        println('Status campaign sudah dihentikan')
 
-WebUI.removeObjectProperty(testobject, dynamicId3)
+        break
+    } else {
+        println('Status campaign belum STOP/REJECT/FINISH')
 
-WebUI.setText(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), 'NeuraltTesting_20181121_MMS')
+        String dynamicId3 = 'submit'
 
-WebUI.sendKeys(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), Keys.chord(Keys.ENTER))
+        String xpath = ('//button[@type=\'' + dynamicId3) + '\']'
 
-WebUI.click(findTestObject('Campaign/i_WAITING_fas fa-eye'))
+        TestObject testobject = new TestObject()
 
-status = WebUI.getText(findTestObject('Campaign/Status'))
+        testobject.addProperty('xpath', ConditionType.EQUALS, xpath)
 
-if (status.equals('STOP')) {
-    println('Status campaign sudah dihentikan')
-} else {
-    println('Status campaign belum STOP')
+        WebUI.click(testobject)
+
+        WebUI.removeObjectProperty(testobject, dynamicId3)
+    }
 }
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-//}
 WebUI.callTestCase(findTestCase('Login/logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
