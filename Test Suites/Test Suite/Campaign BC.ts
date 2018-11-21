@@ -4,7 +4,7 @@
    <name>Campaign BC</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-11-15T13:50:02</lastRun>
+   <lastRun>2018-11-21T14:23:54</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>

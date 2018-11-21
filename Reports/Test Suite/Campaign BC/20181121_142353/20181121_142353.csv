@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Campaign BC,Chrome 70.0.3538.102,,2018-11-21 14:23:55,2018-11-21 14:29:10,5m - 15.387s,PASSED
+,,,,,,
+Test Cases/Campaign/Broadcast/normal - BC-SMS - with excel,Chrome 70.0.3538.102,,2018-11-21 14:23:55,2018-11-21 14:26:24,2m - 28.387s,PASSED
+callTestCase,Chrome 70.0.3538.102,,2018-11-21 14:23:57,2018-11-21 14:24:21,24.656s,PASSED
+maximizeWindow,Chrome 70.0.3538.102,,2018-11-21 14:24:21,2018-11-21 14:24:21,0.011s,PASSED
+Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(excel-campaign),Chrome 70.0.3538.102,,2018-11-21 14:24:21,2018-11-21 14:24:21,0.030s,PASSED
+Statement - For (def index2 : (0..(data.getRowNumbers() - 1))),Chrome 70.0.3538.102,,2018-11-21 14:24:21,2018-11-21 14:26:20,1m - 58.389s,PASSED
+callTestCase,Chrome 70.0.3538.102,,2018-11-21 14:26:20,2018-11-21 14:26:24,4.068s,PASSED
+,,,,,,
+Test Cases/Campaign/Broadcast/normal - view-BC-SMS,Chrome 70.0.3538.102,,2018-11-21 14:26:24,2018-11-21 14:29:10,2m - 46.565s,PASSED
+callTestCase,Chrome 70.0.3538.102,,2018-11-21 14:26:24,2018-11-21 14:26:46,21.922s,PASSED
+maximizeWindow,Chrome 70.0.3538.102,,2018-11-21 14:26:46,2018-11-21 14:26:46,0.004s,PASSED
+Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(excel-campaign),Chrome 70.0.3538.102,,2018-11-21 14:26:46,2018-11-21 14:26:46,0.067s,PASSED
+Statement - For (def index2 : (0..(data.getRowNumbers() - 1))),Chrome 70.0.3538.102,,2018-11-21 14:26:46,2018-11-21 14:29:07,2m - 20.641s,PASSED
+callTestCase,Chrome 70.0.3538.102,,2018-11-21 14:29:07,2018-11-21 14:29:10,3.762s,PASSED
