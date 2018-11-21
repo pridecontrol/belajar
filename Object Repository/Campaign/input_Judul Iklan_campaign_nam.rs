@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;campaign_name&quot;)[count(. | //input[@type = 'text' and @id = 'campaign_name' and @name = 'campaign_name' and @placeholder = 'Masukkan judul iklan' and @maxlength = '45']) = count(//input[@type = 'text' and @id = 'campaign_name' and @name = 'campaign_name' and @placeholder = 'Masukkan judul iklan' and @maxlength = '45'])]</value>
+         <value>id(&quot;campaign_name&quot;)[count(. | //input[@type = 'text' and @id = 'campaign_name' and @name = 'campaign_name' and @maxlength = '45']) = count(//input[@type = 'text' and @id = 'campaign_name' and @name = 'campaign_name' and @maxlength = '45'])]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -52,7 +52,7 @@
       <value>campaign_name</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
