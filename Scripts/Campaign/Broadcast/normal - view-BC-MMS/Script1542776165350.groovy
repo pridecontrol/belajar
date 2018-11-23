@@ -19,7 +19,7 @@ import java.io.BufferedWriter
 import java.io.FileWriter
 
 //file-writer
-FileWriter fileOutput = new FileWriter("D:\\output-checkcampaign.txt")
+FileWriter fileOutput = new FileWriter("D:\\output-checkcampaignmms.txt")
 BufferedWriter bufferwr = new BufferedWriter(fileOutput)
 
 //test-data
@@ -41,7 +41,7 @@ for (def index2 : (0..data.getRowNumbers() - 1)) {
 	
 	//check if the status is already STOP or REJECT or FINISH
 	while (((status != 'STOP') || (status != 'REJECT')) || (status != 'FINISH')) {
-		WebUI.setText(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), 'Neural_Test_20181115_03')
+		WebUI.setText(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), data.internallyGetValue('namaiklan', index2))
 		WebUI.sendKeys(findTestObject('Campaign/input_Judul Iklan_campaign_nam (1)'), Keys.chord(Keys.ENTER))
 		WebUI.click(findTestObject('Campaign/i_WAITING_fas fa-eye'))
 		status = WebUI.getText(findTestObject('Campaign/Status'))
