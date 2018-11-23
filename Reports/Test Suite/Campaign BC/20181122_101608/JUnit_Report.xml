@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Campaign BC" time="231" tests="2" failures="0" errors="0">
+   <testsuite name="Campaign BC" tests="2" failures="0" errors="0" time="231" timestamp="2018-11-22 10:16:10" hostname="NITRO 5 - NITRO-5" id="Test Suites/Test Suite/Campaign BC">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\NITRO 5\\Katalon Studio\\Belajar\\Reports\\Test Suite\\Campaign BC\\20181122_101608"/>
+         <property name="logFiles" value="C:\\Users\\NITRO 5\\Katalon Studio\\Belajar\\Reports\\Test Suite\\Campaign BC\\20181122_101608\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="NITRO 5 - NITRO-5"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.6.1"/>
+         <property name="browser" value="Firefox 57.0"/>
+         <property name="hostAddress" value="192.168.43.120"/>
+         <property name="sessionId" value="44fb0885-7f3d-494c-a5b2-f7d860f49e11"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Campaign/Broadcast/normal - BC-SMS - with excel" classname="Test Cases/Campaign/Broadcast/normal - BC-SMS - with excel" status="PASSED">
+         <system-out><![CDATA[2018-11-22 10:16:10 - [TEST_CASE][PASSED] - Test Cases/Campaign/Broadcast/normal - BC-SMS - with excel: Test Cases/Campaign/Broadcast/normal - BC-SMS - with excel
+
+2018-11-22 10:16:12 - [TEST_STEP][PASSED] - Statement - fileOutput = new java.io.FileWriter(D:\output-createcampaign.txt): null
+
+2018-11-22 10:16:12 - [TEST_STEP][PASSED] - Statement - bufferwr = new java.io.BufferedWriter(fileOutput): null
+
+2018-11-22 10:16:12 - [TEST_STEP][PASSED] - Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(excel-campaign): Reading excel file with source file 'C:\Users\NITRO 5\Documents\TestDataIseng.xlsx' and sheet name 'Lembar1'
+
+2018-11-22 10:16:12 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Login/normal - login' successfully
+
+2018-11-22 10:16:12 - [TEST_CASE][PASSED] - Test Cases/Login/normal - login: Test Cases/Login/normal - login
+
+2018-11-22 10:16:12 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'myads.telkomsel.com'
+
+2018-11-22 10:16:42 - [MESSAGE][PASSED] - Browser is opened with url: 'myads.telkomsel.com'
+
+2018-11-22 10:16:42 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-11-22 10:16:46 - [MESSAGE][PASSED] - Current window maximized
+
+2018-11-22 10:16:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/LoginPage/a_Masuk' is clicked on
+
+2018-11-22 10:16:48 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/a_Masuk' is clicked on
+
+2018-11-22 10:16:48 - [TEST_STEP][PASSED] - setText: Text 'made.bagus@neuralt.com' is set on object 'Object Repository/LoginPage/input_Alamat E-mail Anda_email'
+
+2018-11-22 10:16:48 - [MESSAGE][PASSED] - Text 'made.bagus@neuralt.com' is set on object 'Object Repository/LoginPage/input_Alamat E-mail Anda_email'
+
+2018-11-22 10:16:48 - [TEST_STEP][PASSED] - setText: Text 'satria28' is set on object 'Object Repository/LoginPage/input_Password_password'
+
+2018-11-22 10:16:48 - [MESSAGE][PASSED] - Text 'satria28' is set on object 'Object Repository/LoginPage/input_Password_password'
+
+2018-11-22 10:16:48 - [TEST_STEP][PASSED] - Statement - username = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getAttribute(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(LoginPage/input_Alamat E-mail Anda_email), "value"): Attribute 'value' of object 'Object Repository/LoginPage/input_Alamat E-mail Anda_email' is: 'made.bagus@neuralt.com'
+
+2018-11-22 10:16:48 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/LoginPage/input_Alamat E-mail Anda_email' is: 'made.bagus@neuralt.com'
+
+2018-11-22 10:16:48 - [TEST_STEP][PASSED] - Statement - password = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getAttribute(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(LoginPage/input_Password_password), "value"): Attribute 'value' of object 'Object Repository/LoginPage/input_Password_password' is: 'satria28'
+
+2018-11-22 10:16:48 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/LoginPage/input_Password_password' is: 'satria28'
+
+2018-11-22 10:16:48 - [TEST_STEP][PASSED] - Statement - If (username != null && password != null): Object: 'Object Repository/LoginPage/button_MASUK' is clicked on
+
+2018-11-22 10:16:48 - [TEST_STEP][PASSED] - Statement - If (username.equals(username) && password.equals(password)): Object: 'Object Repository/LoginPage/button_MASUK' is clicked on
+
+2018-11-22 10:16:48 - [TEST_STEP][PASSED] - Statement - println("username: " + username + " | password: " + password): null
+
+2018-11-22 10:16:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/LoginPage/i_Password_fa-eye' is clicked on
+
+2018-11-22 10:16:48 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/i_Password_fa-eye' is clicked on
+
+2018-11-22 10:16:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/LoginPage/button_MASUK' is clicked on
+
+2018-11-22 10:16:54 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/button_MASUK' is clicked on
+
+2018-11-22 10:16:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Login/normal - login' successfully
+
+2018-11-22 10:16:54 - [TEST_STEP][PASSED] - Statement - bufferwr.write("Login berhasil"): null
+
+2018-11-22 10:16:54 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:16:54 - [TEST_STEP][PASSED] - Statement - For (def index2 : (0..(data.getRowNumbers() - 1))): null
+
+2018-11-22 10:16:54 - [TEST_STEP][PASSED] - Statement - bufferwr.write("create campaign " + data.internallyGetValue("namaiklan", index2)): null
+
+2018-11-22 10:16:54 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:16:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/a_Buat Iklan' is clicked on
+
+2018-11-22 10:16:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/a_Buat Iklan' is clicked on
+
+2018-11-22 10:16:58 - [TEST_STEP][PASSED] - delay: Delayed 1 second(s)
+
+2018-11-22 10:16:59 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-11-22 10:16:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/div_Broadcast' is clicked on
+
+2018-11-22 10:16:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/div_Broadcast' is clicked on
+
+2018-11-22 10:16:59 - [TEST_STEP][PASSED] - delay: Delayed 1 second(s)
+
+2018-11-22 10:17:00 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-11-22 10:17:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/div_SMS' is clicked on
+
+2018-11-22 10:17:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/div_SMS' is clicked on
+
+2018-11-22 10:17:05 - [TEST_STEP][PASSED] - comment: Step 1
+
+2018-11-22 10:17:05 - [TEST_STEP][PASSED] - setText: Text 'Neural_Test_20181122_01' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam'
+
+2018-11-22 10:17:05 - [MESSAGE][PASSED] - Text 'Neural_Test_20181122_01' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam'
+
+2018-11-22 10:17:05 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label 'TESTING2' are selected in object 'Object Repository/Campaign/select_Pilih nama pengirim' 
+
+2018-11-22 10:17:05 - [MESSAGE][PASSED] - All options with label 'TESTING2' are selected in object 'Object Repository/Campaign/select_Pilih nama pengirim' 
+
+2018-11-22 10:17:05 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-11-22 10:17:07 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-11-22 10:17:07 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label '(2018-09-19 11:02:09) msisdn_testing - Copy.txt' are selected in object 'Object Repository/Campaign/select_Pilih grup penerima' 
+
+2018-11-22 10:17:07 - [MESSAGE][PASSED] - All options with label '(2018-09-19 11:02:09) msisdn_testing - Copy.txt' are selected in object 'Object Repository/Campaign/select_Pilih grup penerima' 
+
+2018-11-22 10:17:07 - [TEST_STEP][PASSED] - setText: Text '081246996954' is set on object 'Object Repository/Campaign/input_No Tes (MSISDN)_control_'
+
+2018-11-22 10:17:07 - [MESSAGE][PASSED] - Text '081246996954' is set on object 'Object Repository/Campaign/input_No Tes (MSISDN)_control_'
+
+2018-11-22 10:17:07 - [TEST_STEP][PASSED] - setText: Text 'Testing SMS mohon abaikan' is set on object 'Object Repository/Campaign/textarea_disini_message'
+
+2018-11-22 10:17:08 - [MESSAGE][PASSED] - Text 'Testing SMS mohon abaikan' is set on object 'Object Repository/Campaign/textarea_disini_message'
+
+2018-11-22 10:17:08 - [TEST_STEP][PASSED] - scrollToElement: Scroll to object 'Object Repository/Campaign/button_Atur Pengiriman' successfully
+
+2018-11-22 10:17:08 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Campaign/button_Atur Pengiriman' successfully
+
+2018-11-22 10:17:08 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/button_Atur Pengiriman' is clicked on
+
+2018-11-22 10:17:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/button_Atur Pengiriman' is clicked on
+
+2018-11-22 10:17:19 - [TEST_STEP][PASSED] - comment: Step 2
+
+2018-11-22 10:17:19 - [TEST_STEP][PASSED] - focus: Object: 'Object Repository/Campaign/input_Jam Akhir_starttime' is focused
+
+2018-11-22 10:17:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/input_Jam Akhir_starttime' is focused
+
+2018-11-22 10:17:19 - [TEST_STEP][PASSED] - Statement - For (def index : (0..3)): Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:17:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:17:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:17:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:17:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:17:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:17:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:17:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:17:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:17:20 - [TEST_STEP][PASSED] - delay: Delayed 1 second(s)
+
+2018-11-22 10:17:21 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-11-22 10:17:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/input_Top Up_agreement' is clicked on
+
+2018-11-22 10:17:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/input_Top Up_agreement' is clicked on
+
+2018-11-22 10:17:22 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-11-22 10:17:27 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-11-22 10:17:27 - [TEST_STEP][PASSED] - scrollToElement: Scroll to object 'Object Repository/Campaign/button_Selesai - Minta Persetu' successfully
+
+2018-11-22 10:17:27 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Campaign/button_Selesai - Minta Persetu' successfully
+
+2018-11-22 10:17:27 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/button_Selesai - Minta Persetu' is clicked on
+
+2018-11-22 10:17:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/button_Selesai - Minta Persetu' is clicked on
+
+2018-11-22 10:17:27 - [TEST_STEP][PASSED] - comment: Step 3
+
+2018-11-22 10:17:27 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-11-22 10:17:29 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-11-22 10:17:29 - [TEST_STEP][PASSED] - comment: Ini dipake karena object bersifat dinamis, jadi perlu di define manual agar walau value dinamis, aksi dapat dilakukan
+
+2018-11-22 10:17:29 - [TEST_STEP][PASSED] - Statement - dynamicId3 = "sla_yes": null
+
+2018-11-22 10:17:29 - [TEST_STEP][PASSED] - Statement - xpath = "//button[@id="" + dynamicId3 + ""]": null
+
+2018-11-22 10:17:29 - [TEST_STEP][PASSED] - Statement - SudahYakin = new com.kms.katalon.core.testobject.TestObject(newObject): null
+
+2018-11-22 10:17:29 - [TEST_STEP][PASSED] - Statement - SudahYakin.addProperty("xpath", EQUALS, xpath): null
+
+2018-11-22 10:17:29 - [TEST_STEP][PASSED] - click: Object: 'newObject' is clicked on
+
+2018-11-22 10:17:35 - [MESSAGE][PASSED] - Object: 'newObject' is clicked on
+
+2018-11-22 10:17:35 - [TEST_STEP][PASSED] - removeObjectProperty: Remove property of object successfully
+
+2018-11-22 10:17:35 - [MESSAGE][PASSED] - Remove property of object successfully
+
+2018-11-22 10:17:35 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:17:41 - [MESSAGE][PASSED] - Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:17:41 - [TEST_STEP][PASSED] - Statement - bufferwr.write("campaign " + data.internallyGetValue("namaiklan", index2) + " berhasil dibuat"): null
+
+2018-11-22 10:17:41 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:17:41 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:17:41 - [TEST_STEP][PASSED] - Statement - bufferwr.write("create campaign " + data.internallyGetValue("namaiklan", index2)): null
+
+2018-11-22 10:17:41 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:17:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/a_Buat Iklan' is clicked on
+
+2018-11-22 10:17:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/a_Buat Iklan' is clicked on
+
+2018-11-22 10:17:44 - [TEST_STEP][PASSED] - delay: Delayed 1 second(s)
+
+2018-11-22 10:17:45 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-11-22 10:17:45 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/div_Broadcast' is clicked on
+
+2018-11-22 10:17:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/div_Broadcast' is clicked on
+
+2018-11-22 10:17:45 - [TEST_STEP][PASSED] - delay: Delayed 1 second(s)
+
+2018-11-22 10:17:46 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-11-22 10:17:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/div_SMS' is clicked on
+
+2018-11-22 10:17:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/div_SMS' is clicked on
+
+2018-11-22 10:17:56 - [TEST_STEP][PASSED] - comment: Step 1
+
+2018-11-22 10:17:56 - [TEST_STEP][PASSED] - setText: Text 'Neural_Test_20181122_02' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam'
+
+2018-11-22 10:17:56 - [MESSAGE][PASSED] - Text 'Neural_Test_20181122_02' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam'
+
+2018-11-22 10:17:56 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label 'TESTING2' are selected in object 'Object Repository/Campaign/select_Pilih nama pengirim' 
+
+2018-11-22 10:17:56 - [MESSAGE][PASSED] - All options with label 'TESTING2' are selected in object 'Object Repository/Campaign/select_Pilih nama pengirim' 
+
+2018-11-22 10:17:56 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-11-22 10:17:58 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-11-22 10:17:58 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label '(2018-09-19 11:02:09) msisdn_testing - Copy.txt' are selected in object 'Object Repository/Campaign/select_Pilih grup penerima' 
+
+2018-11-22 10:17:58 - [MESSAGE][PASSED] - All options with label '(2018-09-19 11:02:09) msisdn_testing - Copy.txt' are selected in object 'Object Repository/Campaign/select_Pilih grup penerima' 
+
+2018-11-22 10:17:58 - [TEST_STEP][PASSED] - setText: Text '081246996954' is set on object 'Object Repository/Campaign/input_No Tes (MSISDN)_control_'
+
+2018-11-22 10:17:58 - [MESSAGE][PASSED] - Text '081246996954' is set on object 'Object Repository/Campaign/input_No Tes (MSISDN)_control_'
+
+2018-11-22 10:17:58 - [TEST_STEP][PASSED] - setText: Text 'Testing SMS mohon abaikan' is set on object 'Object Repository/Campaign/textarea_disini_message'
+
+2018-11-22 10:17:59 - [MESSAGE][PASSED] - Text 'Testing SMS mohon abaikan' is set on object 'Object Repository/Campaign/textarea_disini_message'
+
+2018-11-22 10:17:59 - [TEST_STEP][PASSED] - scrollToElement: Scroll to object 'Object Repository/Campaign/button_Atur Pengiriman' successfully
+
+2018-11-22 10:17:59 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Campaign/button_Atur Pengiriman' successfully
+
+2018-11-22 10:17:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/button_Atur Pengiriman' is clicked on
+
+2018-11-22 10:18:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/button_Atur Pengiriman' is clicked on
+
+2018-11-22 10:18:02 - [TEST_STEP][PASSED] - comment: Step 2
+
+2018-11-22 10:18:02 - [TEST_STEP][PASSED] - focus: Object: 'Object Repository/Campaign/input_Jam Akhir_starttime' is focused
+
+2018-11-22 10:18:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/input_Jam Akhir_starttime' is focused
+
+2018-11-22 10:18:03 - [TEST_STEP][PASSED] - Statement - For (def index : (0..3)): Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:04 - [TEST_STEP][PASSED] - delay: Delayed 1 second(s)
+
+2018-11-22 10:18:05 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-11-22 10:18:05 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/input_Top Up_agreement' is clicked on
+
+2018-11-22 10:18:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/input_Top Up_agreement' is clicked on
+
+2018-11-22 10:18:05 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-11-22 10:18:10 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-11-22 10:18:10 - [TEST_STEP][PASSED] - scrollToElement: Scroll to object 'Object Repository/Campaign/button_Selesai - Minta Persetu' successfully
+
+2018-11-22 10:18:10 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Campaign/button_Selesai - Minta Persetu' successfully
+
+2018-11-22 10:18:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/button_Selesai - Minta Persetu' is clicked on
+
+2018-11-22 10:18:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/button_Selesai - Minta Persetu' is clicked on
+
+2018-11-22 10:18:10 - [TEST_STEP][PASSED] - comment: Step 3
+
+2018-11-22 10:18:10 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-11-22 10:18:12 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-11-22 10:18:12 - [TEST_STEP][PASSED] - comment: Ini dipake karena object bersifat dinamis, jadi perlu di define manual agar walau value dinamis, aksi dapat dilakukan
+
+2018-11-22 10:18:12 - [TEST_STEP][PASSED] - Statement - dynamicId3 = "sla_yes": null
+
+2018-11-22 10:18:12 - [TEST_STEP][PASSED] - Statement - xpath = "//button[@id="" + dynamicId3 + ""]": null
+
+2018-11-22 10:18:12 - [TEST_STEP][PASSED] - Statement - SudahYakin = new com.kms.katalon.core.testobject.TestObject(newObject): null
+
+2018-11-22 10:18:12 - [TEST_STEP][PASSED] - Statement - SudahYakin.addProperty("xpath", EQUALS, xpath): null
+
+2018-11-22 10:18:12 - [TEST_STEP][PASSED] - click: Object: 'newObject' is clicked on
+
+2018-11-22 10:18:15 - [MESSAGE][PASSED] - Object: 'newObject' is clicked on
+
+2018-11-22 10:18:15 - [TEST_STEP][PASSED] - removeObjectProperty: Remove property of object successfully
+
+2018-11-22 10:18:15 - [MESSAGE][PASSED] - Remove property of object successfully
+
+2018-11-22 10:18:15 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:18:19 - [MESSAGE][PASSED] - Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:18:19 - [TEST_STEP][PASSED] - Statement - bufferwr.write("campaign " + data.internallyGetValue("namaiklan", index2) + " berhasil dibuat"): null
+
+2018-11-22 10:18:19 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:18:19 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:18:19 - [TEST_STEP][PASSED] - Statement - bufferwr.write("create campaign " + data.internallyGetValue("namaiklan", index2)): null
+
+2018-11-22 10:18:19 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:18:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/a_Buat Iklan' is clicked on
+
+2018-11-22 10:18:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/a_Buat Iklan' is clicked on
+
+2018-11-22 10:18:22 - [TEST_STEP][PASSED] - delay: Delayed 1 second(s)
+
+2018-11-22 10:18:23 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-11-22 10:18:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/div_Broadcast' is clicked on
+
+2018-11-22 10:18:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/div_Broadcast' is clicked on
+
+2018-11-22 10:18:23 - [TEST_STEP][PASSED] - delay: Delayed 1 second(s)
+
+2018-11-22 10:18:24 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-11-22 10:18:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/div_SMS' is clicked on
+
+2018-11-22 10:18:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/div_SMS' is clicked on
+
+2018-11-22 10:18:26 - [TEST_STEP][PASSED] - comment: Step 1
+
+2018-11-22 10:18:26 - [TEST_STEP][PASSED] - setText: Text 'Neural_Test_20181122_03' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam'
+
+2018-11-22 10:18:26 - [MESSAGE][PASSED] - Text 'Neural_Test_20181122_03' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam'
+
+2018-11-22 10:18:26 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label 'TESTING2' are selected in object 'Object Repository/Campaign/select_Pilih nama pengirim' 
+
+2018-11-22 10:18:26 - [MESSAGE][PASSED] - All options with label 'TESTING2' are selected in object 'Object Repository/Campaign/select_Pilih nama pengirim' 
+
+2018-11-22 10:18:26 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-11-22 10:18:28 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-11-22 10:18:28 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label '(2018-09-19 11:02:09) msisdn_testing - Copy.txt' are selected in object 'Object Repository/Campaign/select_Pilih grup penerima' 
+
+2018-11-22 10:18:28 - [MESSAGE][PASSED] - All options with label '(2018-09-19 11:02:09) msisdn_testing - Copy.txt' are selected in object 'Object Repository/Campaign/select_Pilih grup penerima' 
+
+2018-11-22 10:18:28 - [TEST_STEP][PASSED] - setText: Text '081246996954' is set on object 'Object Repository/Campaign/input_No Tes (MSISDN)_control_'
+
+2018-11-22 10:18:28 - [MESSAGE][PASSED] - Text '081246996954' is set on object 'Object Repository/Campaign/input_No Tes (MSISDN)_control_'
+
+2018-11-22 10:18:28 - [TEST_STEP][PASSED] - setText: Text 'Testing SMS mohon abaikan' is set on object 'Object Repository/Campaign/textarea_disini_message'
+
+2018-11-22 10:18:28 - [MESSAGE][PASSED] - Text 'Testing SMS mohon abaikan' is set on object 'Object Repository/Campaign/textarea_disini_message'
+
+2018-11-22 10:18:28 - [TEST_STEP][PASSED] - scrollToElement: Scroll to object 'Object Repository/Campaign/button_Atur Pengiriman' successfully
+
+2018-11-22 10:18:28 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Campaign/button_Atur Pengiriman' successfully
+
+2018-11-22 10:18:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/button_Atur Pengiriman' is clicked on
+
+2018-11-22 10:18:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/button_Atur Pengiriman' is clicked on
+
+2018-11-22 10:18:32 - [TEST_STEP][PASSED] - comment: Step 2
+
+2018-11-22 10:18:32 - [TEST_STEP][PASSED] - focus: Object: 'Object Repository/Campaign/input_Jam Akhir_starttime' is focused
+
+2018-11-22 10:18:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/input_Jam Akhir_starttime' is focused
+
+2018-11-22 10:18:32 - [TEST_STEP][PASSED] - Statement - For (def index : (0..3)): Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:33 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/span_Jam Akhir_fa fa-arrow-up' is clicked on
+
+2018-11-22 10:18:33 - [TEST_STEP][PASSED] - delay: Delayed 1 second(s)
+
+2018-11-22 10:18:34 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-11-22 10:18:34 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/input_Top Up_agreement' is clicked on
+
+2018-11-22 10:18:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/input_Top Up_agreement' is clicked on
+
+2018-11-22 10:18:34 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-11-22 10:18:39 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-11-22 10:18:39 - [TEST_STEP][PASSED] - scrollToElement: Scroll to object 'Object Repository/Campaign/button_Selesai - Minta Persetu' successfully
+
+2018-11-22 10:18:39 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Campaign/button_Selesai - Minta Persetu' successfully
+
+2018-11-22 10:18:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/button_Selesai - Minta Persetu' is clicked on
+
+2018-11-22 10:18:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/button_Selesai - Minta Persetu' is clicked on
+
+2018-11-22 10:18:39 - [TEST_STEP][PASSED] - comment: Step 3
+
+2018-11-22 10:18:39 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-11-22 10:18:41 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-11-22 10:18:41 - [TEST_STEP][PASSED] - comment: Ini dipake karena object bersifat dinamis, jadi perlu di define manual agar walau value dinamis, aksi dapat dilakukan
+
+2018-11-22 10:18:41 - [TEST_STEP][PASSED] - Statement - dynamicId3 = "sla_yes": null
+
+2018-11-22 10:18:41 - [TEST_STEP][PASSED] - Statement - xpath = "//button[@id="" + dynamicId3 + ""]": null
+
+2018-11-22 10:18:41 - [TEST_STEP][PASSED] - Statement - SudahYakin = new com.kms.katalon.core.testobject.TestObject(newObject): null
+
+2018-11-22 10:18:41 - [TEST_STEP][PASSED] - Statement - SudahYakin.addProperty("xpath", EQUALS, xpath): null
+
+2018-11-22 10:18:41 - [TEST_STEP][PASSED] - click: Object: 'newObject' is clicked on
+
+2018-11-22 10:18:45 - [MESSAGE][PASSED] - Object: 'newObject' is clicked on
+
+2018-11-22 10:18:45 - [TEST_STEP][PASSED] - removeObjectProperty: Remove property of object successfully
+
+2018-11-22 10:18:45 - [MESSAGE][PASSED] - Remove property of object successfully
+
+2018-11-22 10:18:45 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:18:48 - [MESSAGE][PASSED] - Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:18:48 - [TEST_STEP][PASSED] - Statement - bufferwr.write("campaign " + data.internallyGetValue("namaiklan", index2) + " berhasil dibuat"): null
+
+2018-11-22 10:18:48 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:18:48 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:18:48 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Login/logout' successfully
+
+2018-11-22 10:18:48 - [TEST_CASE][PASSED] - Test Cases/Login/logout: Test Cases/Login/logout
+
+2018-11-22 10:18:48 - [TEST_STEP][PASSED] - mouseOver: Object: 'Object Repository/LoginPage/a_Neural Testing' is hovered
+
+2018-11-22 10:18:48 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/a_Neural Testing' is hovered
+
+2018-11-22 10:18:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/LoginPage/a_Logout' is clicked on
+
+2018-11-22 10:18:51 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/a_Logout' is clicked on
+
+2018-11-22 10:18:51 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-11-22 10:18:52 - [MESSAGE][PASSED] - Browser is closed
+
+2018-11-22 10:18:52 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Login/logout' successfully
+
+2018-11-22 10:18:52 - [TEST_STEP][PASSED] - Statement - bufferwr.write("Logout berhasil"): null
+
+2018-11-22 10:18:52 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:18:52 - [TEST_STEP][PASSED] - Statement - bufferwr.close(): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Campaign/Broadcast/normal - view-BC-SMS" classname="Test Cases/Campaign/Broadcast/normal - view-BC-SMS" status="PASSED">
+         <system-out><![CDATA[2018-11-22 10:18:52 - [TEST_CASE][PASSED] - Test Cases/Campaign/Broadcast/normal - view-BC-SMS: Test Cases/Campaign/Broadcast/normal - view-BC-SMS
+
+2018-11-22 10:18:53 - [TEST_STEP][PASSED] - Statement - fileOutput = new java.io.FileWriter(D:\output-checkcampaign.txt): null
+
+2018-11-22 10:18:53 - [TEST_STEP][PASSED] - Statement - bufferwr = new java.io.BufferedWriter(fileOutput): null
+
+2018-11-22 10:18:53 - [TEST_STEP][PASSED] - Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(excel-campaign): Reading excel file with source file 'C:\Users\NITRO 5\Documents\TestDataIseng.xlsx' and sheet name 'Lembar1'
+
+2018-11-22 10:18:53 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Login/normal - login' successfully
+
+2018-11-22 10:18:53 - [TEST_CASE][PASSED] - Test Cases/Login/normal - login: Test Cases/Login/normal - login
+
+2018-11-22 10:18:53 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'myads.telkomsel.com'
+
+2018-11-22 10:19:11 - [MESSAGE][PASSED] - Browser is opened with url: 'myads.telkomsel.com'
+
+2018-11-22 10:19:11 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-11-22 10:19:15 - [MESSAGE][PASSED] - Current window maximized
+
+2018-11-22 10:19:15 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/LoginPage/a_Masuk' is clicked on
+
+2018-11-22 10:19:17 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/a_Masuk' is clicked on
+
+2018-11-22 10:19:17 - [TEST_STEP][PASSED] - setText: Text 'made.bagus@neuralt.com' is set on object 'Object Repository/LoginPage/input_Alamat E-mail Anda_email'
+
+2018-11-22 10:19:17 - [MESSAGE][PASSED] - Text 'made.bagus@neuralt.com' is set on object 'Object Repository/LoginPage/input_Alamat E-mail Anda_email'
+
+2018-11-22 10:19:17 - [TEST_STEP][PASSED] - setText: Text 'satria28' is set on object 'Object Repository/LoginPage/input_Password_password'
+
+2018-11-22 10:19:17 - [MESSAGE][PASSED] - Text 'satria28' is set on object 'Object Repository/LoginPage/input_Password_password'
+
+2018-11-22 10:19:17 - [TEST_STEP][PASSED] - Statement - username = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getAttribute(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(LoginPage/input_Alamat E-mail Anda_email), "value"): Attribute 'value' of object 'Object Repository/LoginPage/input_Alamat E-mail Anda_email' is: 'made.bagus@neuralt.com'
+
+2018-11-22 10:19:17 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/LoginPage/input_Alamat E-mail Anda_email' is: 'made.bagus@neuralt.com'
+
+2018-11-22 10:19:17 - [TEST_STEP][PASSED] - Statement - password = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getAttribute(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(LoginPage/input_Password_password), "value"): Attribute 'value' of object 'Object Repository/LoginPage/input_Password_password' is: 'satria28'
+
+2018-11-22 10:19:17 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/LoginPage/input_Password_password' is: 'satria28'
+
+2018-11-22 10:19:17 - [TEST_STEP][PASSED] - Statement - If (username != null && password != null): Object: 'Object Repository/LoginPage/button_MASUK' is clicked on
+
+2018-11-22 10:19:17 - [TEST_STEP][PASSED] - Statement - If (username.equals(username) && password.equals(password)): Object: 'Object Repository/LoginPage/button_MASUK' is clicked on
+
+2018-11-22 10:19:17 - [TEST_STEP][PASSED] - Statement - println("username: " + username + " | password: " + password): null
+
+2018-11-22 10:19:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/LoginPage/i_Password_fa-eye' is clicked on
+
+2018-11-22 10:19:17 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/i_Password_fa-eye' is clicked on
+
+2018-11-22 10:19:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/LoginPage/button_MASUK' is clicked on
+
+2018-11-22 10:19:25 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/button_MASUK' is clicked on
+
+2018-11-22 10:19:25 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Login/normal - login' successfully
+
+2018-11-22 10:19:25 - [TEST_STEP][PASSED] - Statement - bufferwr.write("Login berhasil"): null
+
+2018-11-22 10:19:25 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:19:25 - [TEST_STEP][PASSED] - Statement - For (def index2 : (0..(data.getRowNumbers() - 1))): Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:19:25 - [TEST_STEP][PASSED] - Statement - bufferwr.write("check campaign " + data.internallyGetValue("namaiklan", index2)): null
+
+2018-11-22 10:19:25 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:19:25 - [TEST_STEP][PASSED] - mouseOver: Object: 'Object Repository/Campaign/a_Iklan' is hovered
+
+2018-11-22 10:19:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/a_Iklan' is hovered
+
+2018-11-22 10:19:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/a_Daftar Iklan' is clicked on
+
+2018-11-22 10:19:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/a_Daftar Iklan' is clicked on
+
+2018-11-22 10:19:29 - [TEST_STEP][PASSED] - Statement - status = "": null
+
+2018-11-22 10:19:29 - [TEST_STEP][PASSED] - Statement - While (status != "STOP" || status != "REJECT" || status != "FINISH"): null
+
+2018-11-22 10:19:29 - [TEST_STEP][PASSED] - setText: Text 'Neural_Test_20181122_01' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:29 - [MESSAGE][PASSED] - Text 'Neural_Test_20181122_01' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:29 - [TEST_STEP][PASSED] - sendKeys: Keys 'ENTER + ' sent to object: 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:29 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/i_WAITING_fas fa-eye' is clicked on
+
+2018-11-22 10:19:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/i_WAITING_fas fa-eye' is clicked on
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - Statement - status = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Campaign/Status)): Text of object 'Object Repository/Campaign/Status' is: 'WAITING'
+
+2018-11-22 10:19:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Campaign/Status' is: 'WAITING'
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - Statement - If (status.equals("")): null
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - Statement - Else If (status.equals("STOP") || status.equals("REJECT") || status.equals("FINISH")): null
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - Statement - Else: Remove property of object successfully
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - Statement - bufferwr.write("Status campaign " + data.internallyGetValue("namaiklan", index2) + " belum STOP/REJECT/FINISH"): null
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - Statement - bufferwr.write("Menghentikan campaign " + data.internallyGetValue("namaiklan", index2)): null
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - Statement - dynamicId3 = "submit": null
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - Statement - xpath = "//button[@type='" + dynamicId3 + "']": null
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - Statement - testobject = new com.kms.katalon.core.testobject.TestObject(): null
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - Statement - testobject.addProperty("xpath", EQUALS, xpath): null
+
+2018-11-22 10:19:33 - [TEST_STEP][PASSED] - click: Object: '' is clicked on
+
+2018-11-22 10:19:36 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+2018-11-22 10:19:36 - [TEST_STEP][PASSED] - removeObjectProperty: Remove property of object successfully
+
+2018-11-22 10:19:36 - [MESSAGE][PASSED] - Remove property of object successfully
+
+2018-11-22 10:19:36 - [TEST_STEP][PASSED] - setText: Text 'Neural_Test_20181122_01' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:37 - [MESSAGE][PASSED] - Text 'Neural_Test_20181122_01' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:37 - [TEST_STEP][PASSED] - sendKeys: Keys 'ENTER + ' sent to object: 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:37 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/i_WAITING_fas fa-eye' is clicked on
+
+2018-11-22 10:19:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/i_WAITING_fas fa-eye' is clicked on
+
+2018-11-22 10:19:37 - [TEST_STEP][PASSED] - Statement - status = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Campaign/Status)): Text of object 'Object Repository/Campaign/Status' is: 'STOP'
+
+2018-11-22 10:19:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Campaign/Status' is: 'STOP'
+
+2018-11-22 10:19:37 - [TEST_STEP][PASSED] - Statement - If (status.equals("")): null
+
+2018-11-22 10:19:37 - [TEST_STEP][PASSED] - Statement - Else If (status.equals("STOP") || status.equals("REJECT") || status.equals("FINISH")): null
+
+2018-11-22 10:19:37 - [TEST_STEP][PASSED] - Statement - bufferwr.write("Status campaign " + data.internallyGetValue("namaiklan", index2) + " sudah dihentikan"): null
+
+2018-11-22 10:19:37 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:19:37 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:19:37 - [TEST_STEP][PASSED] - Statement - Break: null
+
+2018-11-22 10:19:37 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:19:41 - [MESSAGE][PASSED] - Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:19:41 - [TEST_STEP][PASSED] - Statement - bufferwr.write("check campaign " + data.internallyGetValue("namaiklan", index2)): null
+
+2018-11-22 10:19:41 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:19:41 - [TEST_STEP][PASSED] - mouseOver: Object: 'Object Repository/Campaign/a_Iklan' is hovered
+
+2018-11-22 10:19:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/a_Iklan' is hovered
+
+2018-11-22 10:19:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/a_Daftar Iklan' is clicked on
+
+2018-11-22 10:19:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/a_Daftar Iklan' is clicked on
+
+2018-11-22 10:19:43 - [TEST_STEP][PASSED] - Statement - status = "": null
+
+2018-11-22 10:19:43 - [TEST_STEP][PASSED] - Statement - While (status != "STOP" || status != "REJECT" || status != "FINISH"): null
+
+2018-11-22 10:19:43 - [TEST_STEP][PASSED] - setText: Text 'Neural_Test_20181122_02' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:43 - [MESSAGE][PASSED] - Text 'Neural_Test_20181122_02' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:43 - [TEST_STEP][PASSED] - sendKeys: Keys 'ENTER + ' sent to object: 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:43 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/i_WAITING_fas fa-eye' is clicked on
+
+2018-11-22 10:19:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/i_WAITING_fas fa-eye' is clicked on
+
+2018-11-22 10:19:46 - [TEST_STEP][PASSED] - Statement - status = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Campaign/Status)): Text of object 'Object Repository/Campaign/Status' is: 'STOP'
+
+2018-11-22 10:19:46 - [MESSAGE][PASSED] - Text of object 'Object Repository/Campaign/Status' is: 'STOP'
+
+2018-11-22 10:19:46 - [TEST_STEP][PASSED] - Statement - If (status.equals("")): null
+
+2018-11-22 10:19:46 - [TEST_STEP][PASSED] - Statement - Else If (status.equals("STOP") || status.equals("REJECT") || status.equals("FINISH")): null
+
+2018-11-22 10:19:46 - [TEST_STEP][PASSED] - Statement - bufferwr.write("Status campaign " + data.internallyGetValue("namaiklan", index2) + " sudah dihentikan"): null
+
+2018-11-22 10:19:46 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:19:46 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:19:46 - [TEST_STEP][PASSED] - Statement - Break: null
+
+2018-11-22 10:19:46 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:19:50 - [MESSAGE][PASSED] - Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:19:50 - [TEST_STEP][PASSED] - Statement - bufferwr.write("check campaign " + data.internallyGetValue("namaiklan", index2)): null
+
+2018-11-22 10:19:50 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:19:50 - [TEST_STEP][PASSED] - mouseOver: Object: 'Object Repository/Campaign/a_Iklan' is hovered
+
+2018-11-22 10:19:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/a_Iklan' is hovered
+
+2018-11-22 10:19:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/a_Daftar Iklan' is clicked on
+
+2018-11-22 10:19:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/a_Daftar Iklan' is clicked on
+
+2018-11-22 10:19:53 - [TEST_STEP][PASSED] - Statement - status = "": null
+
+2018-11-22 10:19:53 - [TEST_STEP][PASSED] - Statement - While (status != "STOP" || status != "REJECT" || status != "FINISH"): null
+
+2018-11-22 10:19:53 - [TEST_STEP][PASSED] - setText: Text 'Neural_Test_20181122_03' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:53 - [MESSAGE][PASSED] - Text 'Neural_Test_20181122_03' is set on object 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:53 - [TEST_STEP][PASSED] - sendKeys: Keys 'ENTER + ' sent to object: 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:53 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Campaign/input_Judul Iklan_campaign_nam (1)'
+
+2018-11-22 10:19:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Campaign/i_WAITING_fas fa-eye' is clicked on
+
+2018-11-22 10:19:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Campaign/i_WAITING_fas fa-eye' is clicked on
+
+2018-11-22 10:19:55 - [TEST_STEP][PASSED] - Statement - status = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Campaign/Status)): Text of object 'Object Repository/Campaign/Status' is: 'STOP'
+
+2018-11-22 10:19:55 - [MESSAGE][PASSED] - Text of object 'Object Repository/Campaign/Status' is: 'STOP'
+
+2018-11-22 10:19:55 - [TEST_STEP][PASSED] - Statement - If (status.equals("")): null
+
+2018-11-22 10:19:55 - [TEST_STEP][PASSED] - Statement - Else If (status.equals("STOP") || status.equals("REJECT") || status.equals("FINISH")): null
+
+2018-11-22 10:19:55 - [TEST_STEP][PASSED] - Statement - bufferwr.write("Status campaign " + data.internallyGetValue("namaiklan", index2) + " sudah dihentikan"): null
+
+2018-11-22 10:19:55 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:19:55 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:19:55 - [TEST_STEP][PASSED] - Statement - Break: null
+
+2018-11-22 10:19:55 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:19:58 - [MESSAGE][PASSED] - Navigate to 'http://myads.telkomsel.com' successfully
+
+2018-11-22 10:19:58 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Login/logout' successfully
+
+2018-11-22 10:19:58 - [TEST_CASE][PASSED] - Test Cases/Login/logout: Test Cases/Login/logout
+
+2018-11-22 10:19:58 - [TEST_STEP][PASSED] - mouseOver: Object: 'Object Repository/LoginPage/a_Neural Testing' is hovered
+
+2018-11-22 10:19:58 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/a_Neural Testing' is hovered
+
+2018-11-22 10:19:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/LoginPage/a_Logout' is clicked on
+
+2018-11-22 10:20:00 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/a_Logout' is clicked on
+
+2018-11-22 10:20:00 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-11-22 10:20:01 - [MESSAGE][PASSED] - Browser is closed
+
+2018-11-22 10:20:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Login/logout' successfully
+
+2018-11-22 10:20:01 - [TEST_STEP][PASSED] - Statement - bufferwr.write("Logout berhasil"): null
+
+2018-11-22 10:20:01 - [TEST_STEP][PASSED] - Statement - bufferwr.newLine(): null
+
+2018-11-22 10:20:01 - [TEST_STEP][PASSED] - Statement - bufferwr.close(): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-11-22 10:16:10 - [TEST_SUITE][PASSED] - Campaign BC: Test Cases/Campaign/Broadcast/normal - view-BC-SMS]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

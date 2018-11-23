@@ -16,14 +16,25 @@ import internal.GlobalVariable as GlobalVariable
 import org.apache.commons.lang3.StringUtils as StringUtils
 import org.eclipse.persistence.internal.oxm.record.json.JSONParser.object_return as object_return
 import org.openqa.selenium.Keys as Keys
+import java.io.BufferedWriter
+import java.io.FileWriter
 
-WebUI.callTestCase(findTestCase('Login/normal - login'), [:], FailureHandling.STOP_ON_FAILURE)
+//file-writer
+FileWriter fileOutput = new FileWriter("D:\\output-createcampaign.txt")
+BufferedWriter bufferwr = new BufferedWriter(fileOutput)
 
-WebUI.maximizeWindow()
-
+//test-data
 TestData data = findTestData('excel-campaign')
 
+//action
+WebUI.callTestCase(findTestCase('Login/normal - login'), [:], FailureHandling.STOP_ON_FAILURE)
+bufferwr.write('Login berhasil')
+bufferwr.newLine()
+
 for (def index2 : (0..data.getRowNumbers() - 1)) {
+	bufferwr.write('create campaign ' + data.internallyGetValue('namaiklan', index2))
+	bufferwr.newLine()
+	
     WebUI.click(findTestObject('Campaign/a_Buat Iklan'))
 
     WebUI.delay(1)
@@ -90,7 +101,14 @@ for (def index2 : (0..data.getRowNumbers() - 1)) {
     WebUI.removeObjectProperty(SudahYakin, dynamicId3)
 
     WebUI.navigateToUrl(GlobalVariable.url)
+	
+	bufferwr.write('campaign ' + data.internallyGetValue('namaiklan', index2) + ' berhasil dibuat')
+	bufferwr.newLine()
+	bufferwr.newLine()
+	
 }
 
 WebUI.callTestCase(findTestCase('Login/logout'), [:], FailureHandling.STOP_ON_FAILURE)
-
+bufferwr.write('Logout berhasil')
+bufferwr.newLine()
+bufferwr.close()

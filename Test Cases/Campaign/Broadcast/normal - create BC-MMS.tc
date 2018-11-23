@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>dce6bdca-88f4-419f-88df-4a6e82eb9162</testCaseGuid>
+   <variable>
+      <defaultValue>'C:\\Users\\NITRO 5\\Downloads\\mobil.jpg'</defaultValue>
+      <description></description>
+      <id>c84a42d2-90a1-4658-b86f-f5a6292629b6</id>
+      <masked>false</masked>
+      <name>img</name>
+   </variable>
 </TestCaseEntity>

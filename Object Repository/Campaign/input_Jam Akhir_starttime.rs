@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@name = 'starttime[]' and @type = 'text' and @class = 'starttime form-control input-inline col-12' and @onkeydown = 'return false' and @placeholder = 'Time']</value>
+         <value>id(&quot;starttime[]&quot;)[count(. | //input[@id = 'starttime[]' and @name = 'starttime[]' and @type = 'text' and @class = 'starttime form-control input-inline col-12' and @onkeydown = 'return false' and @placeholder = 'Time']) = count(//input[@id = 'starttime[]' and @name = 'starttime[]' and @type = 'text' and @class = 'starttime form-control input-inline col-12' and @onkeydown = 'return false' and @placeholder = 'Time'])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -24,7 +28,7 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
@@ -66,7 +70,7 @@
       <value>Time</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

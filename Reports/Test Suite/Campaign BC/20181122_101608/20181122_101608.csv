@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Campaign BC,Firefox 57.0,,2018-11-22 10:16:10,2018-11-22 10:20:01,3m - 51.531s,PASSED
+,,,,,,
+Test Cases/Campaign/Broadcast/normal - BC-SMS - with excel,Firefox 57.0,,2018-11-22 10:16:10,2018-11-22 10:18:52,2m - 41.943s,PASSED
+Statement - fileOutput = new java.io.FileWriter(D:\output-createcampaign.txt),Firefox 57.0,,2018-11-22 10:16:12,2018-11-22 10:16:12,0.008s,PASSED
+Statement - bufferwr = new java.io.BufferedWriter(fileOutput),Firefox 57.0,,2018-11-22 10:16:12,2018-11-22 10:16:12,0.005s,PASSED
+Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(excel-campaign),Firefox 57.0,,2018-11-22 10:16:12,2018-11-22 10:16:12,0.046s,PASSED
+callTestCase,Firefox 57.0,,2018-11-22 10:16:12,2018-11-22 10:16:54,42.378s,PASSED
+"Statement - bufferwr.write(""Login berhasil"")",Firefox 57.0,,2018-11-22 10:16:54,2018-11-22 10:16:54,0.001s,PASSED
+Statement - bufferwr.newLine(),Firefox 57.0,,2018-11-22 10:16:54,2018-11-22 10:16:54,0.001s,PASSED
+Statement - For (def index2 : (0..(data.getRowNumbers() - 1))),Firefox 57.0,,2018-11-22 10:16:54,2018-11-22 10:18:48,1m - 53.658s,PASSED
+callTestCase,Firefox 57.0,,2018-11-22 10:18:48,2018-11-22 10:18:52,4.455s,PASSED
+"Statement - bufferwr.write(""Logout berhasil"")",Firefox 57.0,,2018-11-22 10:18:52,2018-11-22 10:18:52,0.000s,PASSED
+Statement - bufferwr.newLine(),Firefox 57.0,,2018-11-22 10:18:52,2018-11-22 10:18:52,0.001s,PASSED
+Statement - bufferwr.close(),Firefox 57.0,,2018-11-22 10:18:52,2018-11-22 10:18:52,0.006s,PASSED
+,,,,,,
+Test Cases/Campaign/Broadcast/normal - view-BC-SMS,Firefox 57.0,,2018-11-22 10:18:52,2018-11-22 10:20:01,1m - 9.185s,PASSED
+Statement - fileOutput = new java.io.FileWriter(D:\output-checkcampaign.txt),Firefox 57.0,,2018-11-22 10:18:53,2018-11-22 10:18:53,0.001s,PASSED
+Statement - bufferwr = new java.io.BufferedWriter(fileOutput),Firefox 57.0,,2018-11-22 10:18:53,2018-11-22 10:18:53,0.000s,PASSED
+Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(excel-campaign),Firefox 57.0,,2018-11-22 10:18:53,2018-11-22 10:18:53,0.029s,PASSED
+callTestCase,Firefox 57.0,,2018-11-22 10:18:53,2018-11-22 10:19:25,32.484s,PASSED
+"Statement - bufferwr.write(""Login berhasil"")",Firefox 57.0,,2018-11-22 10:19:25,2018-11-22 10:19:25,0.000s,PASSED
+Statement - bufferwr.newLine(),Firefox 57.0,,2018-11-22 10:19:25,2018-11-22 10:19:25,0.001s,PASSED
+Statement - For (def index2 : (0..(data.getRowNumbers() - 1))),Firefox 57.0,,2018-11-22 10:19:25,2018-11-22 10:19:58,32.478s,PASSED
+callTestCase,Firefox 57.0,,2018-11-22 10:19:58,2018-11-22 10:20:01,3.882s,PASSED
+"Statement - bufferwr.write(""Logout berhasil"")",Firefox 57.0,,2018-11-22 10:20:01,2018-11-22 10:20:01,0.000s,PASSED
+Statement - bufferwr.newLine(),Firefox 57.0,,2018-11-22 10:20:01,2018-11-22 10:20:01,0.000s,PASSED
+Statement - bufferwr.close(),Firefox 57.0,,2018-11-22 10:20:01,2018-11-22 10:20:01,0.006s,PASSED

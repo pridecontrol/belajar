@@ -15,16 +15,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.apache.commons.lang3.StringUtils as StringUtils
 import org.openqa.selenium.Keys as Keys
+import java.io.BufferedWriter
+import java.io.FileWriter
 
-WebUI.callTestCase(findTestCase('Login/normal - login'), [:], FailureHandling.STOP_ON_FAILURE)
+//file-writer
+FileWriter fileOutput = new FileWriter("D:\\output-checkcampaign.txt")
+BufferedWriter bufferwr = new BufferedWriter(fileOutput)
 
-WebUI.maximizeWindow()
-
+//test-data
 TestData data = findTestData('excel-campaign')
 
+//action
+WebUI.callTestCase(findTestCase('Login/normal - login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+bufferwr.write('Login berhasil')
+bufferwr.newLine()
+bufferwr.newLine()
+
 for (def index2 : (0..data.getRowNumbers() - 1)) {
-	WebUI.mouseOver(findTestObject('Campaign/a_Iklan'))
 	
+	bufferwr.write('check campaign ' + data.internallyGetValue('namaiklan', index2))
+	bufferwr.newLine()
+	
+	WebUI.mouseOver(findTestObject('Campaign/a_Iklan'))
 	WebUI.click(findTestObject('Campaign/a_Daftar Iklan'))
 	
 	status = ''
@@ -38,16 +51,21 @@ for (def index2 : (0..data.getRowNumbers() - 1)) {
 		status = WebUI.getText(findTestObject('Campaign/Status'))
 		
 		if (status.equals('')) {
-			println('Getting campaign status')
+			bufferwr.write('No status, Re-check campaign ' + data.internallyGetValue('namaiklan', index2) + ' status')
+			bufferwr.newLine()
 	
 			WebUI.mouseOver(findTestObject('Campaign/a_Iklan'))
 			WebUI.click(findTestObject('Campaign/a_Daftar Iklan'))
 		} else if ((status.equals('STOP') || status.equals('REJECT')) || status.equals('FINISH')) {
-			println('Status campaign sudah dihentikan')
-	
+			bufferwr.write('Status campaign ' + data.internallyGetValue('namaiklan', index2) +' sudah dihentikan')
+			bufferwr.newLine()
+			bufferwr.newLine()
 			break
 		} else {
-			println('Status campaign belum STOP/REJECT/FINISH')
+			bufferwr.write('Status campaign '+ data.internallyGetValue('namaiklan', index2) + ' belum STOP/REJECT/FINISH')
+			bufferwr.newLine()
+			bufferwr.write('Menghentikan campaign ' + data.internallyGetValue('namaiklan', index2))
+			bufferwr.newLine()
 			
 			String dynamicId3 = "submit"
 			String xpath = ("//button[@type='" + dynamicId3 + "']")
@@ -61,3 +79,6 @@ for (def index2 : (0..data.getRowNumbers() - 1)) {
 }
 
 WebUI.callTestCase(findTestCase('Login/logout'), [:], FailureHandling.STOP_ON_FAILURE)
+bufferwr.write('Logout berhasil')
+bufferwr.newLine()
+bufferwr.close()

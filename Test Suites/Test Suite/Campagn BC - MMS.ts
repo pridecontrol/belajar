@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Campaign BC</name>
+   <name>Campagn BC - MMS</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-11-22T10:16:08</lastRun>
+   <lastRun>2018-11-22T10:55:15</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>ded06c68-33e0-44ac-82fc-16d091a07b6e</testSuiteGuid>
+   <testSuiteGuid>c2c411d0-6c92-4d0e-9160-7c8be85a1001</testSuiteGuid>
    <testCaseLink>
-      <guid>b3ed9287-8a5c-4819-be6d-dc898fc2e50e</guid>
+      <guid>5245e626-1788-4805-8f90-c537d37dfde6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Campaign/Broadcast/normal - BC-SMS - with excel</testCaseId>
+      <testCaseId>Test Cases/Campaign/Broadcast/normal - create BC-MMS</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>3c8f898c-9c11-488e-9d23-c5b082de36d9</variableId>
+         <variableId>c84a42d2-90a1-4658-b86f-f5a6292629b6</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>b99c1276-e9eb-423d-9d5f-d11ec8cf5da9</guid>
+      <guid>00952857-3afb-4a87-9b3e-3e01ab59e5a1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Campaign/Broadcast/normal - view-BC-SMS</testCaseId>
+      <testCaseId>Test Cases/Campaign/Broadcast/normal - view-BC-MMS</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
